@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<form action="" class="messageform">
+        <div class="messageform__form">
+        <p class=" text-italic text-black text-center">Напишите нам ваши вопросы и мы вам перезвоним!</p>
+        <input class="" type="text" placeholder="ФИО">        
+        <input class="" type="text" placeholder="телефон">
+        <textarea class="" name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+        <input class="button text-center text-white text-italic " type="submit" value="Отправить">
+        </div>
+</form> 
+    <header class="header">
+        <div class="logo">
+        <a href="#"><img class="logoim" src="img/logo/logo.png" alt=""></a>
+        </div>
+        <nav class="menu">
+         <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="forUs.html">О нас</a></li>
+          <li><a href="gallery.html">Галерея</a></li>                 
+         </ul>
+        </nav>
+        <div class="phone">   
+        <p>Наш телефон 
+            <br>+7(999)652-54-76</p>
+       </div>
+       <div class="burger_menu burger_menu_active">
+            <a href="" class="burger_menu_button">
+                <span class="burger_menu_line"></span>
+            </a>
+            <nav class="burger_menu_nav">
+                <a href="index.html" class="burger_menu_link">Главная</a>
+                <a href="forUs.html" class="burger_menu_link">О нас</a>
+                <a href="gallery.html" class="burger_menu_link">Галерея</a>
+            </nav>
+            <div class="burger_menu_overlay"></div>
+       </div>
+    </header>
+    <div class="msg-active">
+        <a class="msg-active__button-self">
+        <svg data-name="Live 1" id="Live_1" width="70%" height="50" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><title/><path d="M116.73,31.83a3,3,0,0,0-4.2-.61L64.14,67.34a1,1,0,0,1-1.2,0L15.5,31.06a3,3,0,1,0-3.64,4.77L49.16,64.36,12.27,92.16A3,3,0,1,0,15.88,97L54.11,68.14l5.18,4a7,7,0,0,0,8.43.06l5.44-4.06L111.84,97a3,3,0,1,0,3.59-4.81L78.17,64.35,116.12,36A3,3,0,0,0,116.73,31.83Z"/><path d="M113,19H15A15,15,0,0,0,0,34V94a15,15,0,0,0,15,15h98a15,15,0,0,0,15-15V34A15,15,0,0,0,113,19Zm9,75a9,9,0,0,1-9,9H15a9,9,0,0,1-9-9V34a9,9,0,0,1,9-9h98a9,9,0,0,1,9,9Z"/></svg>
+        </a>
+    </div>
+    <div class="slider">
+        <div class="item">
+            <img src="img/slide/Военкомат1.png" alt="Первый слайд">
+            <div class="slideText">Заголовок слайда 1</div>
+        </div>
+    
+        <div class="item">
+            <img src="img/slide/Военкомат1.png" alt="Второй слайд">
+            <div class="slideText">Заголовок слайда 2</div>
+        </div>
+    
+        <div class="item">
+            <img src="img/slide/Военкомат1.png" alt="Третий слайд">
+            <div class="slideText">Заголовок слайда 3</div>
+        </div>
+    
+        <a class="prev" onclick="minusSlide()">&#10094;</a>
+        <a class="next" onclick="plusSlide()">&#10095;</a>
+    </div>
+    
+    <div class="slider-dots">
+        <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+        <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+        <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+    </div>
+                   
+<div class="contente">
+    <div class="contente_info">
+    <h1 class="contente_info_hh0">Что такое  служба в армии?</h1>
+    <div class="contente_info_text">
+        <p class="text1">Служба в армии это в первую очередь гражданский долг каждого мужчины. 
+            Обязанность, прописанная в законе. 
+            Можно долго рассуждать о том, полезна служба или нет и 
+            стоит ли на год отправляться в войска. Но закон нужно соблюдать.
+            Для большинства призывников служба становиться хоть и 
+            сложным, но очень полезным периодом жизни. 
+            Именно в воинской части можно обучиться полезной профессии, 
+            улучшить свою физическую форму, да и просто стать более 
+            дисциплинированным, собранным и внимательным.
+            </p>
+    </div>
+    <div class="contente-img">
+        <img class="contente-img1" src="img/content/image1.png">
+    </div>
+    <div class="contente_info">
+        <h1 class="contente_info_hh1">Такая разная армия</h1>
+        <div class="contente_info_text">
+            <p class="text2">Армия в той или иной степени 
+                касается каждого гражданина,<br> 
+                поэтому волей-неволей люди осведомлены 
+                о ней. Но ведь армия – это слишком обобщенное и 
+                абстрактное понятие, включающее в себя танки и портянки, 
+                ядерное оружие и звездочки на погонах, а также многое другое. 
+                С целью упорядочения войск по видам, установления определенной 
+                иерархии и разделения территории государства на подконтрольные 
+                участки существует специальный термин – организационная структура 
+                вооруженных сил РФ.
+                </p>
+        </div>
+    </div>
+    <div class="contente-img">
+        <img class="contente-img2" src="img/content/image2.png">
+    </div>
+    </div>
+    
+</div>
+    <footer>
+            <div class="footer_back">
+                <div class="footer_back_map">
+                    <h1>Карта сайта</h1>              
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="forUs.html">О нас</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>                 
+                    </ul>
+                
+                </div>
+                <div class="sotial">
+                    <div class="sotial__top">
+                        <img src="img/icons/VK.svg" alt="" srcset="">
+                        <img src="img/icons/OK.svg" alt="" srcset="">
+                    </div>
+                    <div class="sotial__bottom">
+                        <img src="img/icons/Telegram.svg" alt="" srcset="">
+                        <img src="img/icons/Facebook.svg" alt="" srcset="">
+                    </div>
+                </div>
+                    <div class="footer_back_cap">
+                        <p>Все материалы сайта доступны по лицензии:
+                        Creative Commons Attribution 4.0 International</p>
+                    </div>
+                  </div>                        
+    </footer>
+    
+<script src="js/jQuery.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
